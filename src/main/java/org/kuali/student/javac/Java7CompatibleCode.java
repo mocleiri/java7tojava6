@@ -21,10 +21,12 @@ public class Java7CompatibleCode {
 		  
 	 public static void main(String[] args) {  
 		  try {  
-		   Class string = Class.forName("java.lang.String");  
+		   Class string = Class.forName("java.lang.OoogleBoogle");  
 		   string.getMethod("length").invoke("test");  
 		  } catch (ClassNotFoundException | IllegalAccessException | IllegalArgumentException | InvocationTargetException | NoSuchMethodException | SecurityException e) {  
-		   // do something, and only write it once!!!  
+		   // do something, and only write it once!!!
+			  
+			  e.printStackTrace();
 		  }  
 		 } 
 }
